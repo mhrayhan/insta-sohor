@@ -244,7 +244,23 @@ img {
 #reported{
   display: none;
 }
-
+.qs-header{
+  position: relative;
+  /* display: inline; */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+}
+.qs-header::after {
+    content: '';
+    position: absolute;
+    width: 47%;
+    height: 3px;
+    background-color: rgb(255 5 5);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 @media only screen and (max-width: 992px) {
   #posts {
     grid-template-columns: repeat(2, 1fr);
